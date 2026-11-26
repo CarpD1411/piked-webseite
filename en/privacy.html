@@ -29,11 +29,11 @@
     <p>workping GbR – Marino &amp; Kamensek (partners: Davide Marino and Kresimir Kamensek), Egerlandweg 34, 70736 Fellbach, Germany · E-mail: <a href="mailto:info@piked.app">info@piked.app</a></p>
 
     <h2>In short</h2>
-    <p>PikeD stores everything you enter only on your phone. There is no advertising and no tracking. Your catches, trips, photos and fishing spots only go to our server if you use cloud backup with an account – privately, only for you. You don’t need an account (see “Account”).</p>
+    <p>PikeD stores everything you enter only on your phone. There is no advertising and no tracking. Your catches, trips, photos and fishing spots only go to our server if you use cloud backup with an account – privately, only for you. Only if you agree to “Anonymous statistics” are catches set to “Statistics” sent to our server – without spot, name or photos. You don’t need an account (see “Account”).</p>
 
     <h2>What is stored on your phone</h2>
     <p>Catches (species, length, lure, time, weather, water and – if you allow it – the location), trips with the recorded route, your lure box with photos, saved and own waters with photos, spots, planned fishing days, licences with photos, your own closed-season rules and your settings.</p>
-    <p>For each catch you can choose a visibility (private, statistics, public). This is prepared for later – nothing is shared at the moment.</p>
+    <p>For each catch you can choose a visibility (private, statistics, public). Catches are only shared if you agree to anonymous statistics (see there).</p>
     <p>In your profile you can optionally enter your name, photo, year of birth and gender. These also stay on your phone; your name only appears on shared pictures if you switch that on.</p>
     <p>If you delete PikeD, all of this data is removed from the phone.</p>
 
@@ -56,9 +56,16 @@
     <p>PikeD creates a backup as a file on your phone. Where you save it (e.g. iCloud Drive) or whom you send it to is your choice via the phone’s share menu. We do not receive the file. Please note: it also contains the locations of your catches and the routes of your trips.</p>
     <p>The year in review you can share as a picture contains no places and no names of waters.</p>
 
+    <h2>Anonymous statistics (server at Supabase)</h2>
+    <p>Only if you agree under More → Anonymous statistics does PikeD transmit catches set to “Statistics” (or “Public”) to our server. They are used for water statistics and a bite index that learns from many anglers’ catches.</p>
+    <p>What is transmitted: the water (OpenStreetMap ID and type of water – not the spot on the bank), date and hour, species, length, weight, lure (type, colour, length and weight – not its name), the weather at that time (air pressure and trend, wind, air and estimated water temperature, cloud cover, precipitation), moon brightness and the app version. Never transmitted: your name, your e-mail address, your exact location (spot), trip routes, photos and notes.</p>
+    <p>So that you can delete your data yourself, the app signs in to the server without name or password and receives a random number. This number does not say who you are and is not linked to your account. For technical reasons the server receives your phone’s IP address with every connection; it is not stored with your catches. We only show statistics for a water once at least 5 different anglers have reported there – and only in summary, never individual catches.</p>
+    <p>The server is provided by Supabase, Inc. (USA); the data is stored in a data centre in Ireland (EU). We have a data processing agreement with Supabase; the European Commission’s standard contractual clauses apply to any access from the USA.</p>
+    <p>The legal basis is your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time under More → Anonymous statistics – the app then deletes everything shared so far from the server (if you are offline, the next time you open it). If you set a catch to “Private” or delete it, it is also deleted from the server. “Delete my data from the server” removes everything at once. Otherwise we keep the data as long as PikeD exists.</p>
+
     <h2>Account (optional)</h2>
     <p>Under More → Account you can create an account voluntarily – for cloud backup and features coming later (e.g. crew). Without an account everything else in PikeD works as before.</p>
-    <p>You can sign in with Apple or with Google. We store: a random account number, your e-mail address (with Apple, if you wish, a relay address created by Apple), the sign-in method, the times of sign-up and last use, and the nickname you choose. We only store your real name if you explicitly allow others to see it. There is no password. Your catches, trips, photos and spots only go into the cloud backup (see there).</p>
+    <p>You can sign in with Apple, with Google or with a code sent by e-mail. We store: a random account number, your e-mail address (with Apple, if you wish, a relay address created by Apple), the sign-in method, the times of sign-up and last use, and the nickname you choose. We only store your real name if you explicitly allow others to see it. There is no password. Your catches, trips, photos and spots only go into the cloud backup (see there).</p>
     <p>When signing in with Apple or Google we only receive your e-mail address and – the first time – your name as a suggestion. The privacy policies of Apple (Apple Distribution International Ltd., Ireland) or Google (Google Ireland Limited, Ireland) also apply.</p>
     <p>The account is stored on our server at Supabase, Inc. (USA) in a data centre in Ireland (EU). We have a data processing agreement with Supabase; the European Commission’s standard contractual clauses apply to any access from the USA. We do not pass your data on.</p>
     <p>The legal basis is providing the features you use with the account (Art. 6(1)(b) GDPR). “Delete account” (More → Account) immediately deletes your account and everything linked to it from the server. Everything on your phone stays.</p>
