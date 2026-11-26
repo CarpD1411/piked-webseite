@@ -1,0 +1,87 @@
+/* PikeD-Webseite – Farben wie in der App (src/theme/farben.ts): dunkel mit Petrol, hell als Gegenstück */
+:root {
+  --hintergrund: #0b0b0b;
+  --flaeche: #1a1a1a;
+  --text: #f2f2f2;
+  --nebentext: #a3adab;
+  --akzent: #2b7a82;
+  --akzent-hell: #4fa6ae;
+  --rand: #2a2f2f;
+  --breite: 1040px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --hintergrund: #eef1f1;
+    --flaeche: #ffffff;
+    --text: #121414;
+    --nebentext: #55615f;
+    --akzent: #1f6a72;
+    --akzent-hell: #1f6a72;
+    --rand: #d7dddc;
+    color-scheme: light;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--hintergrund);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+a { color: var(--akzent-hell); }
+img { max-width: 100%; height: auto; }
+
+.breite { max-width: var(--breite); margin: 0 auto; padding: 0 16px; }
+
+/* Kopfleiste */
+.leiste { border-bottom: 1px solid var(--rand); }
+.leiste .breite { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 64px; flex-wrap: wrap; }
+.marke { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 800; font-size: 22px; letter-spacing: -0.3px; }
+.marke img { border-radius: 9px; }
+.marke .d { color: var(--akzent-hell); }
+.leiste nav { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; font-size: 15px; }
+.leiste nav a { color: var(--nebentext); text-decoration: none; }
+.leiste nav a:hover { color: var(--text); }
+
+/* Startseite */
+.held { padding: 64px 0 40px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
+.held h1 { font-size: clamp(34px, 6vw, 54px); line-height: 1.08; margin: 0 0 18px; letter-spacing: -1px; text-wrap: balance; }
+.held h1 span { color: var(--akzent-hell); }
+.held p { font-size: 19px; color: var(--nebentext); margin: 0 0 24px; max-width: 34em; }
+.held .bild { justify-self: center; }
+.held .bild img { width: min(320px, 70vw); border-radius: 22%; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35); }
+.schild { display: inline-block; padding: 6px 12px; border-radius: 999px; background: var(--flaeche); border: 1px solid var(--rand); color: var(--nebentext); font-size: 14px; margin-bottom: 18px; }
+
+.kacheln { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 24px 0 56px; }
+.kachel { background: var(--flaeche); border: 1px solid var(--rand); border-radius: 18px; padding: 22px; }
+.kachel h2 { font-size: 19px; margin: 0 0 8px; }
+.kachel p { margin: 0; color: var(--nebentext); font-size: 16px; }
+.kachel { border-top: 3px solid var(--akzent); }
+
+.abschnitt { padding: 8px 0 56px; }
+.abschnitt h2 { font-size: 26px; margin: 0 0 10px; }
+.abschnitt p { color: var(--nebentext); max-width: 40em; }
+
+/* Rechtstexte */
+main.text { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+main.text h1 { font-size: 34px; line-height: 1.2; margin: 8px 0 20px; }
+main.text h2 { font-size: 21px; margin: 32px 0 8px; }
+main.text p, main.text li { color: var(--text); overflow-wrap: anywhere; }
+main.text .klein { color: var(--nebentext); font-size: 15px; }
+.zurueck { font-size: 15px; }
+
+/* Fußzeile */
+footer { border-top: 1px solid var(--rand); padding: 24px 0 40px; color: var(--nebentext); font-size: 14px; }
+footer .breite { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+footer a { color: var(--nebentext); }
+
+@media (max-width: 760px) {
+  .held { grid-template-columns: 1fr; padding-top: 40px; }
+  .held .bild { order: -1; justify-self: start; }
+  .held .bild img { width: 120px; }
+  .kacheln { grid-template-columns: 1fr; }
+  .leiste nav { gap: 14px; }
+}
