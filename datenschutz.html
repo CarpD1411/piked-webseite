@@ -47,6 +47,7 @@
     <h2>Dienste, die die App abfragt</h2>
     <p>Für Wetter und Karte fragt PikeD die folgenden Dienste ab. Übertragen werden dabei die Koordinaten deines Standorts, der Stelle eines Fangs, einer Tour, eines geplanten Angeltags oder des Kartenausschnitts und technisch bedingt die IP-Adresse deines Handys. An den Wetterdienst gehen die Koordinaten auf etwa 1 km gerundet. Deine Fänge, Fotos und Touren selbst werden nicht übertragen.</p>
     <p>• Wetter: Open-Meteo (Open-Meteo.com, Schweiz) – Wetterdaten unter der Lizenz CC BY 4.0</p>
+    <p>• Strömung: an Flüssen fragt PikeD bei Open-Meteo zusätzlich den Abfluss ab (Modell GloFAS des Copernicus-Katastrophenschutzdienstes). Übertragen werden nur die Mittelpunkte von Rasterkästchen (etwa 5 × 4 km) rund um die Stelle, nicht dein genauer Standort.</p>
     <p>• Mindest-Version: Beim Start fragt PikeD bei unserem Server (Supabase, Irland – siehe „Konto“) nach, welche App-Version mindestens nötig ist. Übertragen wird nur die IP-Adresse; über dich wird dabei nichts gespeichert.</p>
     <p>• Karte: Apple Karten (Apple)</p>
     <p>• Ortssuche: Geoapify (KEPTAGO LTD, Paphos, Zypern; Server in der EU) – wenn du in der Suche auf der Karte „Suchen“ drückst. Die Anfrage läuft über unseren Server (Supabase, Irland), Geoapify erhält nur deinen Suchtext, nicht deine IP-Adresse oder deinen Standort. Nur wenn das nicht klappt: Nominatim der OpenStreetMap Foundation (Vereinigtes Königreich), dann direkt vom Handy.</p>

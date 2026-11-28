@@ -47,6 +47,7 @@
     <h2>Services the app queries</h2>
     <p>For weather and maps PikeD queries the following services. The coordinates of your location, the place of a catch, a trip, a planned fishing day or the map area are transmitted, and for technical reasons your phone’s IP address. The weather service receives the coordinates rounded to about 1 km. Your catches, photos and trips themselves are not transmitted.</p>
     <p>• Weather: Open-Meteo (Open-Meteo.com, Switzerland) – weather data licensed under CC BY 4.0</p>
+    <p>• Current: on rivers PikeD additionally requests the river discharge from Open-Meteo (GloFAS model of the Copernicus Emergency Management Service). Only the centres of grid cells (about 5 × 4 km) around the place are transmitted, not your exact location.</p>
     <p>• Minimum version: at start-up PikeD asks our server (Supabase, Ireland – see “Account”) which app version is required at least. Only the IP address is transmitted; nothing about you is stored.</p>
     <p>• Map: Apple Maps (Apple)</p>
     <p>• Place search: Geoapify (KEPTAGO LTD, Paphos, Cyprus; servers in the EU) – when you press “Search” in the map search. The request goes through our server (Supabase, Ireland); Geoapify only receives your search text, not your IP address or location. Only if that fails: Nominatim of the OpenStreetMap Foundation (United Kingdom), then directly from your phone.</p>
